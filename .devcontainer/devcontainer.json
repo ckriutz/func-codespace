@@ -1,8 +1,17 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {},
-    "ghcr.io/devcontainers/features/azure-cli:1": {},
-    "ghcr.io/devcontainers/features/dotnet:2": {}
+	"image": "mcr.microsoft.com/azure-functions/dotnet-isolated:4-dotnet-isolated8.0-slim",
+	"features": {
+	  "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {},
+	  "ghcr.io/devcontainers/features/azure-cli:1": {},
+	  "ghcr.io/devcontainers/features/dotnet:2": {},
+	  "ghcr.io/devcontainers/features/git:1": {}
+	},
+	"customizations": {
+	  "vscode": {
+		"extensions": [
+		  "ms-azuretools.vscode-azurefunctions",
+		  "ms-dotnettools.csharp"
+		]
+	  }
+	}
   }
-}
